@@ -40,6 +40,7 @@ class PatientController extends Controller
             'gender'  => $request->gender,
             'dob'     => $request->dob,
             'address' => $request->address,
+            'password' => bcrypt($request->dob)
         ]);
 
         // Create patient
