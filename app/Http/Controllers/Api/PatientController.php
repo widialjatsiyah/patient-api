@@ -31,7 +31,7 @@ class PatientController extends Controller
             ];
             return response()->json($response, 422);
         }
-
+        
         // Create user first
         $user = User::create([
             'name'    => $request->name,
